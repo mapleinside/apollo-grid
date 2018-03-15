@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "lint": "../../node_modules/.bin/eslint ./ --config ../../package.json --ignore-path ../../.eslintignore"
+  }
+}
