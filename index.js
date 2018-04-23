@@ -1,3 +1,3 @@
-export {default as Col} from 'packages/apollo-grid/components/Col';
-export {default as Container} from 'packages/apollo-grid/components/Container';
-export {default as Row} from 'packages/apollo-grid/components/Row';
+export { default as Col } from './lib/components/Col';
+export { default as Container } from './lib/components/Container';
+export { default as Row } from './lib/components/Row';

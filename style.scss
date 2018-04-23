@@ -47,10 +47,13 @@ $container-max-widths: (
  * Set the number of columns and specify the width of the gutters.
  */
 $grid-columns: 12 !default;
-$grid-gutter-width: 1.875rem !default; // 30px
+
+// 30px
+$grid-gutter-width: 1.875rem !default;
 
 // Build the grid
-@import 'styles/variables';
-@import 'styles/mixins';
-@import 'styles/utilities';
-@import 'styles/grid';
+
+@import './lib/styles/variables';
+@import './lib/styles/mixins';
+@import './lib/styles/utilities';
+@import './lib/styles/grid';

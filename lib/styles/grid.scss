@@ -1,5 +1,5 @@
 /**
- * Set the container width, and set media queries behavior for it.
+ * Set the container width and set media queries behavior for it
  */
 .container {
   @include make-container();
@@ -17,7 +17,7 @@
 
 
 /**
- * Rows contain and clear the floats of your columns.
+ * Rows contain and clear the floats of your columns
  */
 @if $enable-grid-classes {
   .row {
@@ -26,18 +26,18 @@
 }
 
 /**
- * Common styles for small and large grid columns.
+ * Common styles for small and large grid columns
  */
 @if $enable-grid-classes {
   @include make-grid-columns();
 }
 
 /**
- * Custom styles for additional flex alignment options.
+ * Custom styles for additional flex alignment options
  */
 @if $enable-flex and $enable-grid-classes {
 
-  // Flex column reordering.
+  // Flex column reordering
   @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
       .col-#{$breakpoint}-first {
@@ -50,7 +50,7 @@
     }
   }
 
-  // Alignment for every column in row.
+  // Alignment for every column in row
   @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
       .row-#{$breakpoint}-top {
@@ -67,7 +67,7 @@
     }
   }
 
-  // Alignment per column.
+  // Alignment per column
   @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
       .col-#{$breakpoint}-top {

@@ -1,11 +1,13 @@
 /**
- * Grid structure options.
+ * Grid structure options
  */
 $enable-flex: false !default;
 $enable-grid-classes: true !default;
 
 /**
- * Grid configuration.
+ * Grid configuration
  */
 $grid-columns: 12 !default;
-$grid-gutter-width: 1.875rem !default; // 30px
+
+// 30px
+$grid-gutter-width: 1.875rem !default;

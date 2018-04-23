@@ -1,5 +1,6 @@
 /**
- * Maximum breakpoint width. Null for the largest (last) breakpoint.
+ * Maximum breakpoint width. Null for the largest (last) breakpoint
+ *
  * The maximum value is calculated as the minimum of the next one less 0.1.
  *
  *    >> breakpoint-max(sm, (xs: 0, sm: 544px, md: 768px))
@@ -11,7 +12,7 @@
 }
 
 /**
- * Minimum breakpoint width. Null for the smallest (first) breakpoint.
+ * Minimum breakpoint width. Null for the smallest (first) breakpoint
  *
  *    >> breakpoint-min(sm, (xs: 0, sm: 544px, md: 768px))
  *    544px
@@ -22,12 +23,14 @@
 }
 
 /**
- * Breakpoint viewport sizes and media queries.
+ * Breakpoint viewport sizes and media queries
+ *
  * Breakpoints are defined as a map of (name: minimum width), order from small to large:
  *
  *    (xs: 0, sm: 544px, md: 768px)
  *
- * The map defined in the `$grid-breakpoints` global variable is used as the `$breakpoints` argument by default.
+ * The map defined in the `$grid-breakpoints` global variable is used as the `$breakpoints`
+ * argument by default.
  * Name of the next breakpoint, or null for the last breakpoint.
  *
  *    >> breakpoint-next(sm)
@@ -37,13 +40,18 @@
  *    >> breakpoint-next(sm, $breakpoint-names: (xs sm md))
  *    md
  */
-@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+@function breakpoint-next(
+  $name,
+  $breakpoints: $grid-breakpoints,
+  $breakpoint-names: map-keys($breakpoints)
+) {
   $n: index($breakpoint-names, $name);
   @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
 }
 
 /**
- * Media that spans multiple breakpoint widths.
+ * Media that spans multiple breakpoint widths
+ *
  * Makes the @content apply between the min and max breakpoints.
  */
 @mixin media-breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints) {
@@ -70,7 +78,8 @@
 }
 
 /**
- * Media between the breakpoint's minimum and maximum widths.
+ * Media between the breakpoint's minimum and maximum widths
+ *
  * No minimum for the smallest breakpoint, and no maximum for the largest one.
  * Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
  */

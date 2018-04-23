@@ -1,13 +1,18 @@
 /**
- * Used to generate the correct number of grid classes given any value of `$grid-columns`.
+ * Used to generate the correct number of grid classes given any value of `$grid-columns`
  */
-@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
-
-  // Common properties for all breakpoints.
+@mixin make-grid-columns(
+  $columns: $grid-columns,
+  $gutter: $grid-gutter-width,
+  $breakpoints: $grid-breakpoints
+) {
+  // Common properties for all breakpoints
   %grid-column {
     // Prevent columns from collapsing when empty
     min-height: 1px;
+
     // Inner gutter via padding
+
     padding-left: ($gutter / 2);
     padding-right: ($gutter / 2);
 

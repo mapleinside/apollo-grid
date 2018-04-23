@@ -1,5 +1,5 @@
 /**
- * Generate semantic grid columns with these mixins.
+ * Generate semantic grid columns with these mixins
  */
 @mixin make-container($gutter: $grid-gutter-width) {
   margin-left: auto;
@@ -65,7 +65,8 @@
 
 @mixin make-col-modifier($type, $size, $columns) {
 
-  // Work around the lack of dynamic mixin @include support (https://github.com/sass/sass/issues/626).
+  // Work around the lack of dynamic mixin @include
+  // support (https://github.com/sass/sass/issues/626).
   @if $type == push {
     @include make-col-push($size, $columns);
   } @else if $type == pull {
