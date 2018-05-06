@@ -1,6 +1,6 @@
 # Apollo Grid
 
-> A React grid package based over Bootstrap 4 grid system
+> A React grid package based on Bootstrap 4 grid system
 
 ## Why Apollo Grid?
 
