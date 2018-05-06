@@ -1,6 +1,6 @@
 {
   "name": "apollo-grid",
-  "description": "A React grid package based over Bootstrap 4 grid system",
+  "description": "A React grid package based on Bootstrap 4 grid system",
   "version": "1.0.0",
   "devDependencies": {
     "babel-cli": "^6.26.0",
