@@ -2,6 +2,8 @@
 
 > A React grid package based on Bootstrap 4 grid system
 
+> ❌ Sorry, but this library is no longer maintained. Please find an alternative.
+
 ## Why Apollo Grid?
 
 Like me, you need a powerful 12 columns, flex based responsive grid system for React? Why not use one of the most famous and powerful system as a base: Bootstrap's grid.
@@ -137,7 +139,7 @@ Here is a complete example of a component using a grid:
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Nicolas Cava
+Copyright (c) 2020 Nicolas Cava
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
